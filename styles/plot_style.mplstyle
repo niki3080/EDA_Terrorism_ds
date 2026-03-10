@@ -1,0 +1,66 @@
+# figure layout
+figure.figsize: 10, 7
+figure.constrained_layout.use: False
+figure.subplot.left: 0.1
+figure.subplot.right: 0.9
+figure.subplot.bottom: 0.0
+figure.subplot.top: 0.83
+
+# fonts
+font.family: sans-serif
+font.sans-serif: Arial, DejaVu Sans
+
+# background
+figure.facecolor: "#f9f9f9"
+axes.facecolor: "#f9f9f9"
+
+# axes
+axes.edgecolor: "#444444"
+axes.linewidth: 0.8
+axes.axisbelow: True
+axes.xmargin: 0
+axes.ymargin: 0
+
+# grid
+axes.grid.axis: y
+grid.color: "#d9d9d9"
+grid.linewidth: 1
+
+# titles
+axes.titlelocation: left
+axes.titleweight: bold
+axes.titlesize: 20
+axes.titlepad: 15
+
+# axis labels
+axes.labelsize: 12
+axes.labelpad: 12
+axes.labelcolor: "#000000"
+
+# ticks
+xtick.color: "#444444"
+ytick.color: "#444444"
+xtick.major.size: 3
+ytick.major.size: 3
+
+# lines
+lines.linestyle: -
+lines.linewidth: 0.8
+lines.dashed_pattern: 6, 4
+
+# hatching
+hatch.linewidth: 0.5
+
+# legend
+legend.frameon: False
+legend.fontsize: 11
+legend.title_fontsize: 12
+
+# spines
+axes.spines.top: False
+axes.spines.right: False
+axes.spines.left: False
+
+# saving
+savefig.dpi: 300
+savefig.pad_inches: 0

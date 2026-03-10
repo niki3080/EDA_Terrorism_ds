@@ -1,0 +1,13 @@
+# data
+data/globalterrorismdb_0718dist.csv
+data/
+
+# python
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# mac
+.DS_Store

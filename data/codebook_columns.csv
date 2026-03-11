@@ -1,0 +1,136 @@
+column,description
+eventid,Unique Event ID
+iyear,Year of Incident
+imonth,Month of Incident
+iday,Day of Incident
+approxdate,Approximate Date
+extended,Extended Incident
+resolution,Incident Resolution Date
+country,Country Code
+country_txt,Country Name
+region,Region Code
+region_txt,Region Name
+provstate,Province / State
+city,City
+latitude,Latitude
+longitude,Longitude
+specificity,Location Precision
+vicinity,Incident in Vicinity
+location,Additional Location Information
+summary,Incident Summary
+crit1,Political Motivation
+crit2,Intent to Coerce
+crit3,Outside International Humanitarian Law
+doubtterr,Doubt Terrorism Proper
+alternative,Alternative Designation Code
+alternative_txt,Alternative Designation
+multiple,Part of Multiple Incident
+success,Attack Successful
+suicide,Suicide Attack
+attacktype1,Primary Attack Type Code
+attacktype1_txt,Primary Attack Type
+attacktype2,Secondary Attack Type Code
+attacktype2_txt,Secondary Attack Type
+attacktype3,Tertiary Attack Type Code
+attacktype3_txt,Tertiary Attack Type
+targtype1,Primary Target Type Code
+targtype1_txt,Primary Target Type
+targsubtype1,Primary Target Subtype Code
+targsubtype1_txt,Primary Target Subtype
+corp1,Primary Target Entity
+target1,Primary Target Description
+natlty1,Primary Target Nationality Code
+natlty1_txt,Primary Target Nationality
+targtype2,Secondary Target Type Code
+targtype2_txt,Secondary Target Type
+targsubtype2,Secondary Target Subtype Code
+targsubtype2_txt,Secondary Target Subtype
+corp2,Secondary Target Entity
+target2,Secondary Target Description
+natlty2,Secondary Target Nationality Code
+natlty2_txt,Secondary Target Nationality
+targtype3,Tertiary Target Type Code
+targtype3_txt,Tertiary Target Type
+targsubtype3,Tertiary Target Subtype Code
+targsubtype3_txt,Tertiary Target Subtype
+corp3,Tertiary Target Entity
+target3,Tertiary Target Description
+natlty3,Tertiary Target Nationality Code
+natlty3_txt,Tertiary Target Nationality
+gname,Perpetrator Group Name
+gsubname,Perpetrator Subgroup
+gname2,Second Perpetrator Group
+gsubname2,Second Subgroup
+gname3,Third Perpetrator Group
+gsubname3,Third Subgroup
+motive,Attack Motive
+guncertain1,Group Attribution Uncertain
+guncertain2,Second Group Attribution Uncertain
+guncertain3,Third Group Attribution Uncertain
+individual,Individual Actor
+nperps,Number of Perpetrators
+nperpcap,Number of Perpetrators Captured
+claimed,Responsibility Claimed
+claimmode,Claim Mode Code
+claimmode_txt,Claim Mode
+claim2,Second Claim
+claimmode2,Second Claim Mode Code
+claimmode2_txt,Second Claim Mode
+claim3,Third Claim
+claimmode3,Third Claim Mode Code
+claimmode3_txt,Third Claim Mode
+compclaim,Competing Claims
+weaptype1,Primary Weapon Type Code
+weaptype1_txt,Primary Weapon Type
+weapsubtype1,Primary Weapon Subtype Code
+weapsubtype1_txt,Primary Weapon Subtype
+weaptype2,Secondary Weapon Type Code
+weaptype2_txt,Secondary Weapon Type
+weapsubtype2,Secondary Weapon Subtype Code
+weapsubtype2_txt,Secondary Weapon Subtype
+weaptype3,Tertiary Weapon Type Code
+weaptype3_txt,Tertiary Weapon Type
+weapsubtype3,Tertiary Weapon Subtype Code
+weapsubtype3_txt,Tertiary Weapon Subtype
+weaptype4,Quaternary Weapon Type Code
+weaptype4_txt,Quaternary Weapon Type
+weapsubtype4,Quaternary Weapon Subtype Code
+weapsubtype4_txt,Quaternary Weapon Subtype
+weapdetail,Weapon Details
+nkill,Number Killed
+nkillus,US Nationals Killed
+nkillter,Perpetrators Killed
+nwound,Number Wounded
+nwoundus,US Nationals Wounded
+nwoundte,Perpetrators Wounded
+property,Property Damage
+propextent,Property Damage Extent Code
+propextent_txt,Property Damage Extent
+propvalue,Property Damage Value
+propcomment,Property Damage Comment
+ishostkid,Hostage / Kidnapping Incident
+nhostkid,Total Hostages
+nhostkidus,US Hostages
+nhours,Hostage Duration Hours
+ndays,Hostage Duration Days
+divert,Hijacking Diversion
+kidhijcountry,Hijacking Country
+ransom,Ransom Demand
+ransomamt,Ransom Amount
+ransomamtus,Ransom Amount US
+ransompaid,Ransom Paid
+ransompaidus,Ransom Paid US
+ransomnote,Ransom Note
+hostkidoutcome,Hostage Outcome Code
+hostkidoutcome_txt,Hostage Outcome
+nreleased,Hostages Released
+addnotes,Additional Notes
+scite1,Source 1
+scite2,Source 2
+scite3,Source 3
+dbsource,Database Source
+INT_LOG,International Logistic Involvement
+INT_IDEO,International Ideological Involvement
+INT_MISC,International Misc Involvement
+INT_ANY,Any International Involvement
+related,Related Events

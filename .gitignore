@@ -1,6 +1,6 @@
 # data
 data/globalterrorismdb_0718dist.csv
-data/
+data/terrorism_clean.csv
 
 # python
 __pycache__/

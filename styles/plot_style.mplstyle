@@ -33,7 +33,7 @@ axes.titlesize: 20
 axes.titlepad: 15
 
 # axis labels
-axes.labelsize: 12
+axes.labelsize: 11
 axes.labelpad: 12
 axes.labelcolor: "#000000"
 

@@ -8,8 +8,8 @@ Exploratory analysis of the Global Terrorism Database.
 report_EDA – html file with the EDA\
 notebooks/ – data preparation notebook, EDA Notebook\
 src/ – helper plotting functions\
-styles/ – matplotlib style sheets\  
-data/ – processed dataset; codebook summary
+styles/ – matplotlib style sheets\
+data/ – dataset codebook summary
 
 ## Raw data
 

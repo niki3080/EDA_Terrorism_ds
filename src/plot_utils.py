@@ -63,7 +63,9 @@ def style_legend(ax, title=None, loc="bc", alpha=0.85, ncol=1, shift_x=0.0, hand
         "tl": ("upper left", (0 + shift_x, 1)),
         "br": ("lower right", (1 + shift_x, 0)),
         "bl": ("lower left", (0 + shift_x, 0)),
-        "bc": ("lower center", (0.5 + shift_x, 0))
+        "bc": ("lower center", (0.5 + shift_x, 0)),
+        "cl": ("center left", (0 + shift_x, 0.5)),
+        "cr": ("center right", (1 + shift_x, 0.5))
     }
 
     loc_name, anchor = loc_map.get(loc, ("upper right", (1, 1)))

@@ -15,15 +15,16 @@ def attack_palette(columns):
     return [ATTACK_COLORS.get(c, "#cccccc") for c in columns]
 
 
-def style_title(ax, title, subtitle=None, title_height=0.12, gap=0.02):
+def style_title(ax, title, subtitle=None, title_height=0.12):
 
     fig = ax.figure
-    pos = ax.get_position()
 
-    # серая зона
+    top = 0.92   # высота заголовка
+    left = 0.06  # левый отступ
+
     fig.patches.append(
         patches.Rectangle(
-            (0, pos.y1 + gap),   # ← добавили gap
+            (0, top),
             1,
             title_height,
             transform=fig.transFigure,
@@ -31,11 +32,9 @@ def style_title(ax, title, subtitle=None, title_height=0.12, gap=0.02):
         )
     )
 
-    left = pos.x0
-
     fig.text(
         left,
-        pos.y1 + gap + title_height * 0.60,
+        top + title_height * 0.60,
         title,
         ha="left",
         va="center",
@@ -48,7 +47,7 @@ def style_title(ax, title, subtitle=None, title_height=0.12, gap=0.02):
     if subtitle:
         fig.text(
             left,
-            pos.y1 + gap + title_height * 0.18,
+            top + title_height * 0.18,
             subtitle,
             ha="left",
             va="center",
@@ -58,18 +57,21 @@ def style_title(ax, title, subtitle=None, title_height=0.12, gap=0.02):
         )
 
 
-def style_legend(ax, title=None, loc="bc", alpha=0.85, ncol=1, shift_x=0.0, handles=None):
+
+def style_legend(ax, title=None, loc="bc", alpha=0.85, ncol=1,
+                 shift_x=0.0, shift_y=0.0, handles=None):
+
     loc_map = {
-        "tr": ("upper right", (1 + shift_x, 1)),
-        "tl": ("upper left", (0 + shift_x, 1)),
-        "br": ("lower right", (1 + shift_x, 0)),
-        "bl": ("lower left", (0 + shift_x, 0)),
-        "bc": ("lower center", (0.5 + shift_x, 0)),
-        "cl": ("center left", (0 + shift_x, 0.5)),
-        "cr": ("center right", (1 + shift_x, 0.5))
+        "tr": ("upper right", (1 + shift_x, 1 + shift_y)),
+        "tl": ("upper left", (0 + shift_x, 1 + shift_y)),
+        "br": ("lower right", (1 + shift_x, 0 + shift_y)),
+        "bl": ("lower left", (0 + shift_x, 0 + shift_y)),
+        "bc": ("lower center", (0.5 + shift_x, 0 + shift_y)),
+        "cl": ("center left", (0 + shift_x, 0.5 + shift_y)),
+        "cr": ("center right", (1 + shift_x, 0.5 + shift_y))
     }
 
-    loc_name, anchor = loc_map.get(loc, ("upper right", (1, 1)))
+    loc_name, anchor = loc_map.get(loc, ("upper right", (1 + shift_x, 1 + shift_y)))
 
     legend = ax.legend(
         title=title,
